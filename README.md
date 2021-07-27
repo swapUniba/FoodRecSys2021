@@ -8,8 +8,21 @@ All'interno della directory **FoodRecSys** sono presenti i file costituenti l'in
 All'interno della directory **FoodWebApp** è presente il python nel quale è implementato il Recommender System e gli script per poter avviare e terminare il sistema di raccomanzazione.
 
 # Recommender Service
-Per avviare il Recommender eseguire il comando
+h1 Per avviare il Recommender eseguire il comando
 ```shell
-    ./start_server.sh 
+    ./recommender_start.sh 
 ```
+O 
+```shell
+    nohup python3 recommender.py &
+```
+h2 Per terminare il Recommender eseguire il comando
+```shell
+    ./recommender_stop.sh 
+```
+O 
+```shell
+    pkill -f recommender.py
+```
+
 
