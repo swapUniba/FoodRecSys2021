@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 90.147.102.243:8080/foodrecsys/form.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Feb 2020 12:25:41 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FoodRecSys</title>
+        <meta name="description" content="Core HTML Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.min.css">
+        <link rel="stylesheet" href="../css/customcss.css">
+    </head>
+    <body data-spy="scroll" data-target="#navbar-nav-header" class="single-layout">
+        <div class="boxed-page">
+            <nav id="gtco-header-navbar" class="navbar">
+                <div class="container" >
+                    <span class="navbar-brand">
+                        <img src="../icons/icon3.png" width="80" height="80" class="d-inline-block align-top" alt="">
+                        <a href="index.html">FOOD RECOMMENDATIONS </a>
+                    </span>
+                </div>
+            </nav>
+            <section id="gtco-single-content" class="bg-white">
+                <div class="container">
+                    <div class="section-content blog-content">
+
+                        <!-- Section Title -->
+                        <div class="title-wrap">
+                            <h2 class="section-title">Please search for a Main course</h2>
+                            
+                        </div>
+                        <!-- End of Section Title -->
+
+                        <div class="row mx-auto">
+                        <!-- form -->
+                            <div class="col-md-10 offset-md-1 contact-form-holder mt-4">
+                               <form id="form" method="post" action="../php/manage_request3.php">
+                                    <!-- parola chiave -->
+                                    <div class="form-group row">
+                                        <label for="keyword"> <b>Keyword: </b>  </label> <br> <br>
+                                        <div class="col-sm-3">
+                                            <div class="form-check form-check-inline">
+                                              <input type="text" name="q" id="keyword" required>
+                                              <small id="disclaimer" class="form-text text-muted">for example:pasta, rice, sugo <br> to express more than one keyword, combine them with a hyphen (for example: smoked-salmon) <br> you can write both Italian or English</small>
+                                            </div>
+                                        </div>
+                                    </div> <br> <br>
+
+                                <!--   
+
+                                   <div class="form-group row">
+                                       <label for="diet"> diet type: </label>
+                                       <div class="col-sm-2">
+                                           <select id="diet" name="diet" required>
+                                               <option value="balanced"> balanced </option>
+                                               <option value="high-protein"> high-protein </option>
+                                               <option value="high-fiber"> high-fiber </option>
+                                               <option value="low-carb"> low-carb </option>
+                                               <option value="low-fat"> low-fat </option>
+                                               <option value="low-sodium"> low-sodium </option>
+                                           </select>
+                                       </div>
+                                   </div>
+
+
+                                   
+                                   <div class="form-group row ">
+                                        <label class="col-sm-4 col-form-label"> Diet labels:</label>
+                                        <div class="col-sm-7">
+                                            <select id="labels" name="labels" required>
+                                                <option value="vegan"> vegan </option>
+                                                <option value="vegetarian"> vegetarian </option>
+                                                <option value="egg-free"> egg free </option>
+                                                <option value="fish-free"> fish free </option>
+                                                <option value="gluten-free"> gluten free </option>
+                                            </select>
+                                        </div>
+                                   </div>
+                               
+
+                                                                       <div class="form-group row">
+                                        <label for="dishType" class="col-sm-6 col-form-label">express a keyword that can recommend you a:</label>
+                                        <div class="col-sm-2">
+                                            <select id="dishType" name="dishType" required>
+                                                <option hidden disabled selected value></option>
+                                                <option value="Main course"> Main course </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    -->
+
+
+                                   <input type="hidden" name="dish" id="hiddenField" value="main" />
+
+                                    <br>
+                                    <div class="col-md-8 offset-md-2 form-btn text-center">
+                                        <button id="btnForm" class="btn btn-block btn-secondary btn-red col-md-4 offset-md-4 link-button" type="submit" name="submit">Continue</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="mastfoot mb-3 bg-white py-4 border-top">
+                <div class="inner container">
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <span> &copy; 2019 <a href="http://www.di.uniba.it/~swap/" target="_blank"> SWAP Research Group </a>,</span>
+                            <span>&nbsp;<a href="privacy.html" target="_blank">Privacy Policy </a></span>
+                        </div>
+                        <div class="col-md-6 d-flex flex-row-reverse  ">
+                            <span>Developed by <a href="https://github.com/serino28" target="_blank">Antonio Serino</a> &amp; <a href="https://github.com/cataldomusto" target="_blank">Cataldo Musto</a></span>                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- External JS -->
+        <script src="../../code.jquery.com/jquery-3.3.1.min.js" ></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+
+<!-- Mirrored from 90.147.102.243:8080/foodrecsys/form.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Feb 2020 12:25:42 GMT -->
+</html>
