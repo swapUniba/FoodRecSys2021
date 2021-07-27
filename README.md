@@ -9,6 +9,7 @@ All'interno della directory **FoodWebApp** è presente il python nel quale è im
 
 # Recommender Service
 Per avviare il Recommender eseguire il comando
-'''shell
+```shell
     ./start_server.sh 
-'''
+```
+
