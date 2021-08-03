@@ -4,6 +4,22 @@ Sistema di raccomandazione di ricette personalizzate realizzato durante il lavor
 # FoodRecSys 
 All'interno della directory **FoodRecSys** sono presenti i file costituenti l'interfaccia web.
 
+## Configurazioni
+Sono state realizzate ai fini dello sviluppo del Recommender System due diverse configurazioni: la prima presenta insieme alle raccomandazioni delle etichette che danno informazioni su quanto una ricetta possa essere salutare, la seconda presenta la raccomandazione senza etichette.
+<br>Per poter utilizzare la prima configurazione è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
+```php
+    $random = 1;
+```
+Per poter utilizzare la seconda configurazione è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
+```php
+    $random = 0;
+```
+Se si vuole impostare la configurazione in maniera randomizzata è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
+```php
+    $random = rand(0,1);
+```
+
+
 # FoodWebApp
 All'interno della directory **FoodWebApp** è presente il python nel quale è implementato il Recommender System e gli script per poter avviare e terminare il sistema di raccomanzazione.
 
@@ -44,19 +60,6 @@ O
     pkill -f recommender.py
 ```
 
-# Configurazioni
-Sono state realizzate ai fini dello sviluppo del Recommender System due diverse configurazioni: la prima presenta insieme alle raccomandazioni delle etichette che danno informazioni su quanto una ricetta possa essere salutare, la seconda presenta la raccomandazione senza etichette.
-<br>Per poter utilizzare la prima configurazione è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
-```php
-    $random = 1;
-```
-Per poter utilizzare la seconda configurazione è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
-```php
-    $random = 0;
-```
-Se si vuole impostare la configurazione in maniera randomizzata è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
-```php
-    $random = rand(0,1);
-```
+
 
 
