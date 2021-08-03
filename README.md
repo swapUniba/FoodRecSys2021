@@ -44,4 +44,19 @@ O
     pkill -f recommender.py
 ```
 
+# Configurazioni
+Sono state realizzate ai fini dello sviluppo del Recommender System due diverse configurazioni: la prima presenta insieme alle raccomandazioni delle etichette che danno informazioni su quanto una ricetta possa essere salutare, la seconda presenta la raccomandazione senza etichette.
+Per poter utilizzare la prima configurazione è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
+```php
+    $random = 1;
+```
+Per poter utilizzare la seconda configurazione è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
+```php
+    $random = 0;
+```
+Se si vuole impostare la configurazione in maniera randomizzata è necessario impostare alla riga 179 dei file *manage_request.php*, *manage_request2.php* e *manage_request3.php*
+```php
+    $random = rand(0,1);
+```
+
 
